@@ -1,3 +1,4 @@
+/* Basic Styles */
 html {
     font-size: 100%;
     line-height: 1.5rem;
@@ -10,7 +11,7 @@ body {
     margin: 0 auto;
     padding: 0;
     min-height: 100%;
-    max-width: 100%;
+    min-width: 100%;
     padding-bottom: 5rem;
 }
 
@@ -24,7 +25,7 @@ img {
     display: block;
 }
 
-/* Begin Hero Styles */
+/* Begin Header Styles */
 .hero-box {
     display: grid;
     grid-template-columns: 1fr;
@@ -34,7 +35,7 @@ img {
     justify-content: center;
     align-items: start;
     height: 100%;
-    width:100%;
+    width: 100%;
 }
 
 .hero-image-box {
@@ -52,7 +53,7 @@ img {
     position: absolute;
     top: 0;
     bottom: 0;
-    background-color: rgba(194, 14, 140, 0.30);
+    background-color: rgba(41, 167, 62, 0.4);
 }
 
 .hero-image {
@@ -85,8 +86,7 @@ img {
     color: white;
 }
 
-/* Portfolio Gallery */
-
+/* Portfolio */
 .portfolio-container {
     margin: 1rem auto 0 auto;
 }
@@ -94,7 +94,7 @@ img {
 .portfolio-container h1 {
     font-size: 2rem;
     line-height: 2rem;
-    color: green;
+    color: rgba(41, 167, 62, 0.4)
 }
 
 .portfolio-gallery {
@@ -113,13 +113,14 @@ img {
 .gallery-image {
     height: 100%;
     object-fit: cover;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .gallery-image:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
+/* Media Queries */
 @media (min-width: 600px) {
     .hero-heading {
         font-size: 4rem;
